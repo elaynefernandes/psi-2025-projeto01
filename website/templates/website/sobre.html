@@ -1,0 +1,216 @@
+
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moranguinho - Sobre</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  <link href="{% static 'website/estilo.css' %}" rel="stylesheet"/>
+
+  <!--
+    body{
+        font-family: 'Baloo 2', cursive;
+        
+    }
+    /* Cabeçalho */
+    .navbar-custom {
+      background-color: #fff;
+      padding: 0.5rem 1rem;
+    }
+
+    .nav-link {
+      color: #333;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+    }
+
+    .nav-link.active {
+      background-color: #2ecc71;
+      color: white !important;
+      border-radius: 5px;
+    }
+
+    .logo-img {
+      margin-left: 50px;
+      height: 90px;
+    }
+
+    .navbar-nav {
+      margin-left: auto;
+    }
+
+    /* Linhas decorativas */
+    .linha-verde {
+      height: 15px;
+      background-color: #055c2b;
+    }
+
+    .linha-vc{
+      height: 20px;
+      background-color: #5dd070;
+    }
+
+    /* Seções */
+     .sobre-titulo {
+      padding: 1rem;
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+      text-align: left;
+      background-color: #eb2067b6 ;
+    }
+    
+
+    .texto {
+      flex: 1;
+      min-width: 300px;
+      font-size: 1.1rem;
+    }
+
+    .texto h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-shadow: 2px 1px 0 rgb(50, 167, 87);
+    }
+
+    .texto h3 {
+      font-size: 1.7rem;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .texto p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .img-container {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+
+    .img-container img {
+      width: 330px;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #055c2b;
+    }
+
+    .bg-rosa {
+      padding-top:50px ;
+      background-color: #eb2067b6;
+      color: rgb(12, 7, 7);
+      height: 500px;
+      display: flex;
+      padding: 100px;
+      padding-bottom: 200px;
+      align-items: center;
+    }
+    .bg-rosa .texto{
+        background-color:white;
+        border-radius: 30px;
+        padding: 50px;
+
+    }
+
+    
+
+    /* Rodapé */
+    footer {
+      background-color: #16d368;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer .bi {
+      font-size: 2rem;
+      color: white;
+      margin: 0 15px;
+      transition: transform 0.2s;
+    }
+
+    footer .bi:hover {
+      transform: scale(1.2);
+      color: #000;
+    }
+  -->
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/Moranguinho_Logo.png" alt="Moranguinho" class="logo-img">
+      </a>
+      <div class="collapse navbar-collapse show">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="elenco.html">Elenco</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Linhas decorativas -->
+  <div class="linha-verde"></div>
+  <div class="linha-vc"></div>
+
+  <!-- Seção 1 - Texto esquerda, imagem direita -->
+   <div class="sobre-titulo">Sobre</div>
+  
+  <section class="bg-rosa">
+    <div class="texto">
+      <h3>Quem é moranguinho?</h3>
+      <p>
+        Moranguinho é uma personagem infantil criada nos Estados Unidos em 1977, conhecida por seu visual fofo com roupas de morango, cabelo rosa e por ser alegre e gentil. 
+        No Brasil, ficou famosa nos anos 80 com bonecas perfumadas e desenhos animados. Ela vive em um mundo colorido chamado Jardim de Morango, junto com seus amigos como Laranjinha e Maçãzinha.
+      </p>
+    </div>
+    <div class="img-container">
+      <img src="img/img1.jpg" alt="Moranguinho 1">
+    </div>
+  </section>
+
+  <!-- Seção 2 - Imagem esquerda, texto direita -->
+  <section class="secao-sobre bg-rosa">
+    <div class="img-container">
+      <img src="img/img2.jpg" alt="Moranguinho 2">
+    </div>
+    <div class="texto">
+      <h3>O que ela ensina?</h3>
+      <p>
+        Moranguinho ensina valores como amizade, gentileza, responsabilidade e imaginação. Seus episódios mostram sempre boas atitudes e a importância de ajudar os outros, resolver conflitos com diálogo e espalhar doçura pelo mundo!
+      </p>
+    </div>
+  </section>
+  <div class="linha-footer"></div>
+  <!-- Rodapé -->
+  <footer>
+    <a href="#"><i class="bi bi-instagram"></i></a>
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-youtube"></i></a>
+  </footer>
+
+</body>
+</html>

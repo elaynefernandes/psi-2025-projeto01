@@ -1,0 +1,315 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+body {
+  font-family: 'Baloo 2', cursive;
+  margin: 0;
+}
+/* Cabeçalho */
+.navbar-custom {
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+}
+.nav-link {
+  color: #333;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+.nav-link.active {
+  background-color: #2ecc71;
+  color: white !important;
+  border-radius: 5px;
+}
+.logo-img {
+  margin-left: 50px;
+  height: 90px;
+}
+.navbar-nav {
+  margin-left: auto;
+}
+/* Linhas decorativas */
+.linha-verde {
+  height: 15px;
+  background-color: #5dd070;
+}
+.linha-vc {
+  height: 20px;
+  background-color: #055c2b;
+}
+/* Página Inicial */
+.saiba {
+  background-color: #5dd070;      
+  color: white;
+  margin-top: 70px;
+  padding: 8px 16px;
+  border-radius: 10px;            
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.home-section {
+  background: linear-gradient(to right, #eb2067b6 50%);
+  color: white;
+  min-height: 80vh;
+  padding: 0;
+}
+
+.texto-area {
+  padding: 2rem;
+  color: white;
+}
+.bem-vindo {
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 1rem;
+  text-shadow: 2px 1px 0 rgb(50, 167, 87);
+}
+.descricao {
+  font-size: 20px;
+  line-height: 1.6;
+}
+.imagem-area img,
+.home-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Novidades */
+body.novidades {
+  background-color: #fff0f6;
+}
+
+.novidades-titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #eb2067;
+  text-shadow: 2px 1px seagreen;
+  margin-bottom: 2rem;
+  border-bottom: 5px solid #055c2b;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.card-novidade {
+  background: white;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-novidade h5 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.card-novidade p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.btn-saiba {
+  display: inline-block;
+  background-color: #eb2067;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-family: 'Baloo 2', cursive;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+.btn-saiba:hover {
+  background-color: #b81c54;
+  color: #fff;
+}
+
+/* Página Sobre */
+
+.sobre-titulo {
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+  background-color: #eb2067b6;
+  text-shadow: 2px 1px seagreen;
+}
+.bg-rosa {
+  background-color:#eb2067b6 ;
+  padding: 100px;
+  padding-top: 50px;
+  padding-bottom: 200px;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.bg-rosa .texto {
+  background-color: white;
+  border-radius: 30px;
+  padding: 50px;
+  flex: 1;
+  min-width: 300px;
+  color: black;
+}
+.texto h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 1px 0 rgb(50, 167, 87);
+}
+.texto h3 {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.texto p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: justify;
+}
+.img-container {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+.img-container img {
+  width: 350px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 15px solid #055c2b;
+  outline: 20px solid #8fef9a;
+  
+  
+  
+}
+/* Página Elenco */
+
+body.elenco {
+  background-color: #eb2067b6;
+  min-height: 100vh;
+}
+
+.elenco .container {
+  background: transparent !important;
+}
+.elenco-titulo {
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+  text-shadow: 2px 1px seagreen
+}
+/* Página Diário */
+body.diario {
+  background-color: #fff0f5;
+  min-height: 100vh;
+}
+
+.diario-header {
+  background-color: #eb2067b6;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  text-shadow: 1px 1px seagreen;
+}
+
+.diario-header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.diario-header p {
+  font-size: 1.3rem;
+}
+
+.diario-conteudo {
+  padding: 50px 20px;
+}
+
+.entrada-diario {
+  background-color: white;
+  border-left: 10px solid #5dd070;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.entrada-diario h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #eb2067;
+  margin-bottom: 10px;
+}
+
+.entrada-diario p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.entrada-diario .data {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}
+
+.character-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+.character-card img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+.character-name {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #d63384;
+}
+/* Rodapé */
+.linha-footer{
+  background-color: #8fef9a;
+  height: 40px;
+  width: 100%;
+}
+footer {
+  background-color: #16d368;
+  padding: 20px 0;
+  text-align: center;
+  height: 10vh;
+}
+footer .bi {
+  font-size: 2rem;
+  color: white;
+  margin: 0 15px;
+  transition: transform 0.2s;
+}
+footer .bi:hover {
+  transform: scale(1.2);
+  color: #000;
+}

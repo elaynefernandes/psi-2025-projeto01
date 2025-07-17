@@ -1,0 +1,237 @@
+
+{%load static%}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elenco - Moranguinho</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="{% static 'website/estilo.css' %}" rel="stylesheet"/>
+
+  <!--
+    /* Cabeçalho */
+    .navbar-custom {
+      background-color: #fff;
+      padding: 0.5rem 1rem;
+    }
+
+    .nav-link {
+      color: #333;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+    }
+
+    .nav-link.active {
+      background-color: #2ecc71;
+      color: white !important;
+      border-radius: 5px;
+    }
+
+    .logo-img {
+      margin-left: 50px;
+      height: 90px;
+    }
+
+    .navbar-nav {
+      margin-left: auto;
+    }
+
+    /* Linhas abaixo do menu */
+    .linha-verde {
+      height: 15px;
+      background-color: #055c2b;
+      margin: 0;
+      padding: 0;
+    }
+
+    .linha-vc {
+      height: 20px;
+      background-color: #5dd070;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Fundo e título */
+    body {
+      background: linear-gradient(to bottom, #eb2067b6, #eb2067b6);
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .elenco-titulo {
+      padding: 1rem;
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+      text-align: left;
+    }
+
+    /* Personagens */
+    .character-card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    .character-card img {
+      width: 200px;       /* ou qualquer tamanho desejado */
+      height: 300px;      /* define uma altura fixa */
+      object-fit: cover;  /* mantém o enquadramento */
+      display: block;
+      margin: 0 auto; 
+    }
+
+    
+    .character-name {
+      margin-top: 0.5rem;
+      font-weight: bold;
+      color: #d63384;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #16d368;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer .bi {
+      font-size: 2rem;
+      color: white;
+      margin: 0 15px;
+      transition: transform 0.2s;
+    }
+
+    footer .bi:hover {
+      transform: scale(1.2);
+      color: #000;
+    }
+  -->
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="elenco">
+
+  <!-- Cabeçalho -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/Moranguinho_Logo.png" alt="Moranguinho" class="logo-img">
+      </a>
+      <div class="collapse navbar-collapse show">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="elenco.html">Elenco</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Linhas coloridas após o menu -->
+  <div class="linha-verde"></div>
+  <div class="linha-vc"></div>
+
+  <!-- Título da seção -->
+  <div class="elenco-titulo">Elenco</div>
+
+  <!-- Galeria de personagens -->
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="character-card">
+          <img src="img/p1.jpg" alt="Moranguinho">
+          <div class="character-name">Moranguinho</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="character-card">
+          <img src="img/p2.jpg" alt="Personagem 2">
+          <div class="character-name">Limãozinho</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="character-card">
+          <img src="img/p3.jpg" alt="Personagem 3">
+          <div class="character-name">Cerejinha</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="character-card">
+          <img src="img/p4.jpg" alt="Personagem 4">
+          <div class="character-name">Maçãzinha</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="character-card">
+          <img src="img/p5.png" alt="Personagem 5">
+          <div class="character-name">Nome 5</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="character-card">
+          <img src="img/p6.jpg" alt="Personagem 6">
+          <div class="character-name">Nome 6</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="character-card">
+          <img src="img/p7.jpg" alt="Personagem 7">
+          <div class="character-name">Nome 7</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="character-card">
+          <img src="img/p8.jpg" alt="Personagem 8">
+          <div class="character-name">Nome 8</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="character-card">
+          <img src="img/p9.jpg" alt="Personagem 9">
+          <div class="character-name">Nome 9</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="character-card">
+          <img src="img/p10.jpg" alt="Personagem 10">
+          <div class="character-name">Nome 10</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="character-card">
+          <img src="img/p11.png" alt="Personagem 11">
+          <div class="character-name">Nome 11</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="linha-footer"></div>
+  <!-- Rodapé -->
+  <footer>
+    <a href="#"><i class="bi bi-instagram"></i></a>
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-youtube"></i></a>
+  </footer>
+
+</body>
+</html>
