@@ -3,8 +3,31 @@ from django.shortcuts import render
 def index(request): 
     return render(request, "website/index.html")
 
+secao1 = {
+    'titulo': 'Quem é Moranguinho?',
+    'conteudo': 'Moranguinho é uma personagem infantil criada nos Estados Unidos em 1977...',
+    'imagem': 'website/img/img1.jpg'
+}
+
+secao2 = {
+    'titulo': 'Onde ela vive',
+    'conteudo': 'Moranguinho mora em um lugar mágico chamado Jardim de Morango...',
+    'imagem': 'website/img/casa.jpg'
+}
+
+secao3 = {
+    'titulo': 'Onde ela vive',
+    'conteudo': 'Moranguinho mora em um lugar mágico chamado Jardim de Morango...',
+    'imagem': 'website/img/casa.jpg'
+}
+
 def sobre(request): 
-    return render(request, "website/sobre.html")
+    context = {
+        "secao1" : secao1,
+        "secao2" : secao2,
+        "secao3" : secao3
+    }
+    return render(request, "website/sobre.html", context)
 
 personagens = [
         {
