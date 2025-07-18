@@ -1,7 +1,29 @@
 from django.shortcuts import render
 
+
+novidades = [
+        {
+            'titulo': 'Boneca Moranguinho Novabrink',
+            'conteudo': 'Chegou aí uma super novidade para as crianças que amam Moranguinho: A boneca da Moranguinho da série Moranguinho na Grande Cidade é o mais novo lançamento da Novabrink para o Natal.',
+            "imagem": "website/img/n1.png"
+        },
+        {
+            'titulo': 'Produtos Moranguinho Água de Cheiro',
+            'conteudo': 'Resgatando a memória afetiva dos consumidores, a Água de Cheiro lança uma linha edição limitada de hidratantes corporais e body splash da Moranguinho Vintage.',
+            "imagem": "website/img/n2.png"
+        },
+        {
+            'titulo': 'Moranguinho na Cidade Grande está disponível no Prime Vídeo',
+            'conteudo': 'Confira os desafios culinários de Moranguinho na Cidade Grande com suas amigas Laranjinha, Lima Limão, Gotinha de Limão, Amora Linda e claro sua fiel companheira a Pudim.',
+            "imagem": "website/img/n3.png"
+        }]
+
+
 def index(request): 
-    return render(request, "website/index.html")
+    context = {
+        "novidades":novidades
+    }
+    return render(request, "website/index.html", context)
 
 secao1 = {
     'titulo': 'Quem é Moranguinho?',
