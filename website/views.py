@@ -27,19 +27,19 @@ def index(request):
 
 secao1 = {
     'titulo': 'Quem é Moranguinho?',
-    'conteudo': 'Moranguinho é uma personagem infantil criada nos Estados Unidos em 1977...',
+    'conteudo': 'Moranguinho é uma personagem infantil criada nos Estados Unidos em 1977. Ela é conhecida por seu visual fofo, com um chapéu de morango e roupas coloridas. Vive em um lugar mágico chamado Jardim de Morango e adora fazer bolos, cuidar dos amigos e espalhar alegria por onde passa. A Moranguinho se tornou um símbolo de doçura, amizade e imaginação para várias gerações de crianças.',
     'imagem': 'website/img/img1.jpg'
 }
 
 secao2 = {
-    'titulo': 'Onde ela vive',
-    'conteudo': 'Moranguinho mora em um lugar mágico chamado Jardim de Morango...',
-    'imagem': 'website/img/casa.jpg'
+    'titulo': 'O que ela ensina?',
+    'conteudo': 'A Moranguinho ensina valores importantes como a amizade, o respeito, a gentileza e o trabalho em equipe. Com suas atitudes no dia a dia, ela mostra como é importante ajudar os outros, cuidar da natureza e nunca desistir diante das dificuldades. Suas histórias inspiram as crianças a serem mais doces, responsáveis e solidárias.',
+    'imagem': 'website/img/img2.jpg'
 }
 
 secao3 = {
     'titulo': 'Onde ela vive',
-    'conteudo': 'Moranguinho mora em um lugar mágico chamado Jardim de Morango...',
+    'conteudo': 'Moranguinho vive em um lugar encantado chamado Jardim de Morango. É um mundo colorido, cheio de flores, frutas e aromas deliciosos. Lá, tudo é alegre e mágico — as casas são feitas de doces, as árvores dão frutas o ano todo e os amigos vivem sempre perto. É nesse cantinho especial que Moranguinho cuida da natureza, prepara receitas deliciosas e compartilha momentos felizes com seus companheiros.',
     'imagem': 'website/img/casa.jpg'
 }
 
