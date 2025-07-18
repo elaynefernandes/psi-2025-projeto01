@@ -5,17 +5,20 @@ novidades = [
         {
             'titulo': 'Boneca Moranguinho Novabrink',
             'conteudo': 'Chegou aí uma super novidade para as crianças que amam Moranguinho: A boneca da Moranguinho da série Moranguinho na Grande Cidade é o mais novo lançamento da Novabrink para o Natal.',
-            "imagem": "website/img/n1.png"
+            "imagem": "website/img/n1.png",
+            'link': 'https://www.ciatoy.com.br/boneca---moranguinho--1780--novabrink/p'
         },
         {
             'titulo': 'Produtos Moranguinho Água de Cheiro',
             'conteudo': 'Resgatando a memória afetiva dos consumidores, a Água de Cheiro lança uma linha edição limitada de hidratantes corporais e body splash da Moranguinho Vintage.',
-            "imagem": "website/img/n2.png"
+            'imagem': "website/img/n2.png",
+            'link': 'https://www.aguadecheiro.com.br/busca'
         },
         {
             'titulo': 'Moranguinho na Cidade Grande está disponível no Prime Vídeo',
             'conteudo': 'Confira os desafios culinários de Moranguinho na Cidade Grande com suas amigas Laranjinha, Lima Limão, Gotinha de Limão, Amora Linda e claro sua fiel companheira a Pudim.',
-            "imagem": "website/img/n3.png"
+            'imagem': "website/img/n3.png",
+            'link': 'https://www.primevideo.com/detail/Moranguinho/0LY2WQHPMV3K907CKWFAIU0TV7'
         }]
 
 
@@ -158,14 +161,16 @@ postagens = [
 
 atividades = [
         {
-            'titulo': 'Boneca Moranguinho Novabrink',
-            'conteudo': 'Chegou aí uma super novidade para as crianças que amam Moranguinho: A boneca da Moranguinho da série Moranguinho na Grande Cidade é o mais novo lançamento da Novabrink para o Natal.',
-            "imagem": "website/img/n1.png"
+            'titulo': 'Moranguinho e amigas',
+            'conteudo': 'Vamos colorir suas personagens favoritas!',
+            "imagem": "website/img/amigas.jpg",
+            'atividade': 'website/media/amigas.pdf'
         },
         {
-            'titulo': 'Produtos Moranguinho Água de Cheiro',
-            'conteudo': 'Resgatando a memória afetiva dos consumidores, a Água de Cheiro lança uma linha edição limitada de hidratantes corporais e body splash da Moranguinho Vintage.',
-            "imagem": "website/img/n2.png"
+            'titulo': 'Moranguinho',
+            'conteudo': 'Adicione cores nesta folha de colorir da Amora Linda e Cheesecake',
+            "imagem": "website/img/m.jpg",
+            'atividade': 'website/media/moranguinhoo.pdf'
 }]
 
 def diario(request): 

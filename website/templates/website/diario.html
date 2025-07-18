@@ -31,7 +31,7 @@
           <img src="/static/{{ a.imagem }}" alt="{{ a.titulo }}" class="img-fluid rounded">
           <h5><strong>{{ a.titulo }}</strong></h5>
           <p>{{ a.conteudo }}</p>
-          <a href="#" class="btn-saiba">SAIBA MAIS</a>
+          <a href="{% static a.atividade %}" class="btn-saiba">DOWNLOAD</a>
         </div>
       </div>
       {% endfor %}
