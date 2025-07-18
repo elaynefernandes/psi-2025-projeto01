@@ -117,6 +117,39 @@ def elenco(request):
     }
     return render(request, "website/elenco.html", context)
 
-def diario(request): 
-    return render(request, "website/diario.html")
+postagens = [
+        {
+            'titulo': '🌸 Um dia no campo',
+            'conteudo': 'Hoje foi um dia maravilhoso! Eu e minhas amigas fomos colher morangos no campo. O sol estava brilhando e o vento cheirava a flores fresquinhas! 🍓🌞',
+            'data': '09 de Julho de 2025',
+        },
+        {
+            'titulo': '🎂 Aniversário da Framboesinha',
+            'conteudo': 'Fizemos uma festa surpresa para a Framboesinha. Tinha bolo de frutas, decoração rosa e muitas risadas. Ela adorou tudo!',
+            'data': '07 de Julho de 2025',
+        },
+        {
+            'titulo': '☔ Dia chuvoso',
+            'conteudo': 'Hoje choveu bastante, então ficamos em casa fazendo cupcakes e brincando de tabuleiro. Às vezes, os dias simples são os mais doces!',
+            'data': '05 de Julho de 2025',
+        }]
 
+atividades = [
+        {
+            'titulo': 'Boneca Moranguinho Novabrink',
+            'conteudo': 'Chegou aí uma super novidade para as crianças que amam Moranguinho: A boneca da Moranguinho da série Moranguinho na Grande Cidade é o mais novo lançamento da Novabrink para o Natal.',
+            "imagem": "website/img/n1.png"
+        },
+        {
+            'titulo': 'Produtos Moranguinho Água de Cheiro',
+            'conteudo': 'Resgatando a memória afetiva dos consumidores, a Água de Cheiro lança uma linha edição limitada de hidratantes corporais e body splash da Moranguinho Vintage.',
+            "imagem": "website/img/n2.png"
+}]
+
+def diario(request): 
+    context ={
+        "postagens": postagens, 
+        "atividades": atividades
+    }
+    return render(request, "website/diario.html", context)
+     

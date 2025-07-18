@@ -1,0 +1,40 @@
+{% extends 'website/base.html' %}
+
+{% load static %}
+
+{% block title %}Diário da Moranguinho{% endblock %}
+{% block body_class %}diario{% endblock %}
+
+{% block content %}
+  <div class="diario-header">
+    <h1>Diário da Moranguinho e atividades</h1>
+    <p>Descubra os momentos especiais e doces aventuras da Moranguinho!</p>
+  </div>
+
+  <div class="container diario-conteudo">
+    {% for p in postagens %}
+      <div class="entrada-diario">
+        <h2>{{ p.titulo }}</h2>
+        <p>{{ p.conteudo }}</p>
+        <span class="data">{{ p.data }}</span>
+      </div>
+    {% endfor %}
+  </div>
+
+  <!-- Atividades -->
+  <div class="container novidades-container mt-4 mb-5">
+    <h2 class="novidades-titulo">ATIVIDADES</h2>
+    <div class="row justify-content-center g-4">
+      {% for a in atividades %}
+      <div class="col-md-4">
+        <div class="card-novidade">
+          <img src="/static/{{ a.imagem }}" alt="{{ a.titulo }}" class="img-fluid rounded">
+          <h5><strong>{{ a.titulo }}</strong></h5>
+          <p>{{ a.conteudo }}</p>
+          <a href="#" class="btn-saiba">SAIBA MAIS</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}
