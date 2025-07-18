@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}Moranguinho{% endblock %}</title>
+
+  <!-- Bootstrap e Ícones -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+  <!-- Fonte Baloo e CSS próprio -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'website/css/estilo.css' %}" />
+</head>
+<body>
+  <body class="{% block body_class %}{% endblock %}">
+  
+  
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'index' %}">
+        <img src="{% static 'website/img/Moranguinho_Logo.png' %}" alt="Moranguinho" class="logo-img">
+      </a>
+      <div class="collapse navbar-collapse show">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link {% if request.path == '/' %}active{% endif %}" href="{% url 'index' %}">Início</a></li>
+          <li class="nav-item"><a class="nav-link {% if request.path == '/sobre/' %}active{% endif %}" href="{% url 'sobre' %}">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link {% if request.path == '/elenco/' %}active{% endif %}" href="{% url 'elenco' %}">Elenco</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Linhas decorativas -->
+  <div class="linha-verde"></div>
+  <div class="linha-vc"></div>
+
+  <!-- Conteúdo principal -->
+  
+
+  {% block content %}{% endblock %}
+
+  <!-- Linha do rodapé -->
+  <div class="linha-footer"></div>
+
+  <!-- Rodapé -->
+  <footer>
+    <a href="#"><i class="bi bi-instagram"></i></a>
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-youtube"></i></a>
+  </footer>
+
+</body>
+</html>
