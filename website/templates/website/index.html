@@ -34,7 +34,7 @@
 {% for n in novidades %}
 <div class="col-md-4">
   <div class="card-novidade">
-    <img src="{% static n.imagem %}" alt="{{ n.titulo }}" class="img-fluid rounded">
+    <img src="{% static n.imagem.url %}" alt="{{ n.titulo }}" class="img-fluid rounded">
     <h5><strong>{{ n.titulo }}</strong></h5>
     <p>{{ n.conteudo }}</p>
     <a href="{{n.link}}" class="btn-saiba">SAIBA MAIS</a> 

@@ -7,36 +7,15 @@
 {% block content %}
 <div class="sobre-titulo">Sobre</div>
 
-
+{% for s in secoes %}
 <section class="bg-rosa">
   <div class="texto">
-    <h3>{{ secao1.titulo }}</h3>
-    <p>{{ secao1.conteudo }}</p>
+    <h3>{{ s.titulo }}</h3>
+    <p>{{ s.conteudo }}</p>
   </div>
   <div class="img-container">
-    <img src="{% static secao1.imagem %}" alt="Imagem seção 1">
+    <img src="{{ s.imagem.url }}" alt="Imagem {{ s.titulo }}">
   </div>
 </section>
-
-
-<section class="bg-rosa">
-  <div class="img-container">
-    <img src="{% static secao2.imagem %}" alt="Imagem seção 2">
-  </div>
-  <div class="texto">
-    <h3>{{ secao2.titulo }}</h3>
-    <p>{{ secao2.conteudo }}</p>
-  </div>
-</section>
-
-
-<section class="bg-rosa">
-  <div class="texto">
-    <h3>{{ secao3.titulo }}</h3>
-    <p>{{ secao3.conteudo }}</p>
-  </div>
-  <div class="img-container">
-    <img src="{% static secao3.imagem %}" alt="Imagem seção 1">
-  </div>
-</section>
+{% endfor %}
 {% endblock %}

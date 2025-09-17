@@ -14,7 +14,7 @@
     {% for p in personagens %}
       <div class="col-md-4">
         <div class="character-card">
-          <img src="{% static p.imagem %}" alt="{{ p.nome }}">
+          <img src="{% static p.imagem.url %}" alt="{{ p.nome }}">
           <div class="character-name">{{ p.nome }}</div>
           <div class="character-info text-start mt-2">
             <p><strong>Fruta:</strong> {{ p.fruta }}</p>
