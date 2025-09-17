@@ -25,16 +25,17 @@
   <div class="container novidades-container mt-4 mb-5">
     <h2 class="novidades-titulo">ATIVIDADES</h2>
     <div class="row justify-content-center g-4">
-      {% for a in atividades %}
-      <div class="col-md-4">
-        <div class="card-novidade">
-          <img src="/static/{{ a.imagem }}" alt="{{ a.titulo }}" class="img-fluid rounded">
-          <h5><strong>{{ a.titulo }}</strong></h5>
-          <p>{{ a.conteudo }}</p>
-          <a href="{% static a.atividade %}" class="btn-saiba">DOWNLOAD</a>
-        </div>
-      </div>
-      {% endfor %}
+  {% for a in atividades %}
+  <div class="col-md-4">
+    <div class="card-novidade">
+      <img src="{{ a.imagem.url }}" alt="{{ a.titulo }}" class="img-fluid rounded">
+      <h5><strong>{{ a.titulo }}</strong></h5>
+      <p>{{ a.conteudo }}</p>
+      <a href="{{ a.atividade.url }}" class="btn-saiba">DOWNLOAD</a>
+    </div>
+  </div>
+{% endfor %}
+
     </div>
   </div>
 {% endblock %}
