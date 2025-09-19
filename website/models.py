@@ -5,7 +5,7 @@ class Novidade(models.Model):
     conteudo = models.TextField()
     imagem = models.ImageField(upload_to="novidades/", blank=True, null=True)
     link = models.URLField(blank=True, null=True)
-    data_publicacao = models.DateField(auto_now_add=True)
+    data_publicacao = models.DateField(null=True, blank=True)
 
     def __str__(self):
         return self.titulo
@@ -34,7 +34,7 @@ class Secao(models.Model):
 class Postagem(models.Model):
     titulo = models.CharField(max_length=200)
     conteudo = models.TextField()
-    data = models.DateField(auto_now_add=True)
+    data_publicacao = models.DateField(null=True, blank=True)
 
     def __str__(self):
         return self.titulo
